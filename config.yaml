@@ -1,4 +1,4 @@
-baseURL: http://localhost:1313/portfolio/
+baseURL: "https://isanmartin8a.github.io/"
 languageCode: es-es 
 title: isanmartin8a | Personal Portfolio
 theme: portfolioTheme
