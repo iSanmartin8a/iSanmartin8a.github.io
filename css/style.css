@@ -82,8 +82,8 @@ html {
 
 #pPic {
   display: block;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 5000px;
   object-position: 0px -15px;
   object-fit: cover;
