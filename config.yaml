@@ -1,0 +1,29 @@
+baseURL: http://localhost:1313/portfolio/
+languageCode: es-es 
+title: Alejandro Sanmartín
+theme: portfolioTheme
+
+author: 
+  facebook: "https://facebook.com/sanmartin8a" 
+  twitter: "https://twitter.com/sanmartin8a" 
+  email: "isanmartin8a@gmail.com" 
+  name: "Alejandro Sanmartín" 
+  location: Zaragoza
+  phone: (+34) 668568639
+
+params: 
+  color: "#4f46e5"
+  copyright: "Copyright ©; 2022 Acme Corporation. Todos los derechos reservados."
+  footer:
+  - title: Sobre nosotros
+    content: >
+      Empresa dedicada a la producción de utensilios de cocina en **papel reciclado**. 
+
+  - title: Publicaciones recientes
+    recents: blog
+    recentCount: 7
+
+  - title: Contáctanos
+    contact: true
+
+  
