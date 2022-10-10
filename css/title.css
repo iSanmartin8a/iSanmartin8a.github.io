@@ -1,0 +1,35 @@
+blockquote {
+  background-color: #ff4a4a;
+  background-position: 10px 10%;
+  background-repeat: no-repeat no-repeat;
+  padding: 150px 0;
+}
+
+.lTitle {
+    color: black;
+    font-family: poppins;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.xlTitle {
+    color: black;
+    font-family: poppins;
+    font-size: 115px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.mTitle {
+    color: black;
+    font-family: poppins;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.punchline p {
+  background: #f2f2f2;
+  color: #ff4a4a;
+}
