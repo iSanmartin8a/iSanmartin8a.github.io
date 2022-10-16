@@ -3,7 +3,12 @@
   src: url(../fonts/upheaval/upheavtt.ttf);
 }
 
-/* CLASSES */
+@font-face {
+  font-family: joystix;
+  src: url(../fonts/joystix/joystix.ttf);
+}
+
+/* MAIN */
 
 .mainTitle {
   color: black;
@@ -167,36 +172,6 @@
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
-  .picCard {
-    width: auto;
-    max-width: 350px;
-    align-items: flex-start;
-    margin: 10px;
-  }
-  .picCard:hover {
-    height: 600px;
-  }
-
-  .picCard .picContent {
-    width: 100%;
-    left: 0;
-    padding: 30px;
-  }
-
-  .picCard:hover img {
-    top: 70%;
-    left: 50%;
-    height: 300px;
-  }
-}
-
-@media (max-width: 420px) {
-  .picCard .picContent {
-    padding: 20px;
-  }
-}
-
 .picCard {
   background: rgba(255, 255, 255, 0.38);
   border-radius: 16px;
@@ -232,12 +207,55 @@
 }
 
 .dni {
-  font-size: 20px;
-  line-height: 35px;
+  position: absolute;
+  left: -5%;
+  top: 20%;
+  font-family: joystix;
+  font-size: 15px;
+  line-height: 50px;
 }
 
 .colorTitle {
     background: linear-gradient(135deg, #42d392, #647eff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.dni strong {
+  color: #5E8CEC;
+  border: 2px dashed rgb(0,0,0, 0.2);
+  border-spacing: 3px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .picCard {
+    width: auto;
+    max-width: 350px;
+    align-items: flex-start;
+    margin: 10px;
+  }
+  .picCard:hover {
+    height: 600px;
+  }
+
+  .picCard .picContent {
+    width: 100%;
+    left: 0;
+    padding: 30px;
+  }
+
+  .picCard:hover img {
+    top: 70%;
+    left: 50%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .picCard .picContent {
+    padding: 20px;
+  }
 }
