@@ -30,7 +30,8 @@
   display: flex;
   width: 50%;
   height: 40rem;
-  vertical-align: middle;
+  padding-top: 10%;
+  justify-content: center;
 }
 
 #mainRight {
@@ -54,13 +55,11 @@
 }
 
 .picCard {
-  position: relative;
-  top: 10rem;
-  left: 15rem;
+  justify-content: center;
+  vertical-align: center;
   width: 20rem;
   height: 20rem;
   transition: 0.5s;
-  vertical-align: middle;
 }
 
 .picCard:hover {
@@ -77,19 +76,7 @@
   border-radius: 20px;
 }
 
-.picCard .picCircle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  transition: 0.3s;
-  border-radius: 20px;
-}
-
-.picCard:hover .picCircle:before {
+.picCard:hover {
   background: #e7e7e7;
   box-shadow: rgba(198, 198, 198, 0.25) 0px 30px 60px -12px inset,
     rgba(190, 190, 190, 0.3) 0px 18px 36px -18px inset;
@@ -216,21 +203,83 @@
 }
 
 .colorTitle {
-    background: linear-gradient(135deg, #42d392, #647eff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #42d392, #647eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dni strong {
-  color: #5E8CEC;
-  border: 2px dashed rgb(0,0,0, 0.2);
+  color: #5e8cec;
+  border: 2px dashed rgb(0, 0, 0, 0.2);
   border-spacing: 3px;
 }
 
-
 /* RESPONSIVE */
 
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
+
+  #firstWrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pPic {
+    width: 24vw;
+    height: 24vw;
+  }
+
+  .picCard {
+    width: 24vw;
+    height: 24vw;
+  }
+
+  #mainRight h2 {
+    font-size: 6vw;
+  }
+
+  #mainLeft {
+    height: 55vw;
+    margin: auto;
+    padding-top: 5%;
+  }
+
+  #mainRight {
+    height: 55vw;
+    margin: auto;
+  }
+
+  #mainRight h2 {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  #pPic {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .picCard {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #firstWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #mainRight {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #mainRight h2 {
+    font-size: 10vw;
+  }
+
   .picCard {
     width: auto;
     max-width: 350px;
@@ -252,9 +301,13 @@
     left: 50%;
     height: 300px;
   }
+
+  #mainLeft {
+    padding: 5px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 400px) {
   .picCard .picContent {
     padding: 20px;
   }

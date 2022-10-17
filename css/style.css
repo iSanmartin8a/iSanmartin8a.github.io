@@ -24,3 +24,17 @@ html {
   transform: scale(1.05);
   transition: 0.3s;
 }
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 700px) {
+  #content {
+    top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  
+}
