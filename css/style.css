@@ -25,6 +25,11 @@ html {
   transition: 0.3s;
 }
 
+footer {
+  padding-top: 10rem;
+  text-align: center;
+}
+
 @media (max-width: 1500px) {
 
 }

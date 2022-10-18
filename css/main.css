@@ -17,6 +17,7 @@
   font-weight: 700;
   text-align: right;
   margin: auto;
+  transition: 0.7s;
 }
 
 /* IDS */
@@ -69,13 +70,6 @@
   left: 8rem;
 }
 
-.picCard .picCircle {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
 .picCard:hover {
   background: #e7e7e7;
   box-shadow: rgba(198, 198, 198, 0.25) 0px 30px 60px -12px inset,
@@ -104,7 +98,6 @@
   transform: scale(0.5);
   top: -15%;
   border: 5px dashed black;
-  /* border-image-outset: 10px 10 10 10; */
   transition: 0.5s;
 }
 
@@ -115,6 +108,7 @@
   height: 100%;
   left: 20%;
   transition: 0.5s;
+  overflow: hidden;
 }
 
 .picCard:hover .picContent {
@@ -128,11 +122,6 @@
 .picCard:hover ul {
   opacity: 1;
   transition: 0.5s;
-}
-
-.picCard:hover .social {
-  opacity: 1;
-  transition: 1s;
 }
 
 .picCard .picContent h2 {
@@ -182,6 +171,12 @@
   opacity: 0;
   transition: 0.5s;
   text-align: center;
+  visibility: hidden;
+}
+
+.picCard:hover .social {
+  visibility: visible;
+  transition: 1s;
 }
 
 .picContent ul {
@@ -200,6 +195,11 @@
   font-family: joystix;
   font-size: 15px;
   line-height: 50px;
+  visibility: hidden;
+}
+
+.picCard:hover .dni {
+  visibility: visible;
 }
 
 .colorTitle {
@@ -217,7 +217,6 @@
 /* RESPONSIVE */
 
 @media (max-width: 1500px) {
-
   #firstWrapper {
     justify-content: center;
     align-items: center;
@@ -251,17 +250,10 @@
   #mainRight h2 {
     margin: 0;
   }
-
 }
 
 @media (max-width: 700px) {
-
   #pPic {
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .picCard {
     width: 40vw;
     height: 40vw;
   }
@@ -286,6 +278,7 @@
     align-items: flex-start;
     margin: 10px;
   }
+
   .picCard:hover {
     height: 600px;
   }
@@ -305,10 +298,52 @@
   #mainLeft {
     padding: 5px;
   }
+
+  .picCard {
+    width: 40vw;
+    height: 40vw;
+  }
 }
 
 @media (max-width: 400px) {
   .picCard .picContent {
     padding: 20px;
+  }
+
+  .picCard:hover .socialIcon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .picCard:hover .social {
+    display: inline;
+  }
+
+  .picCard:hover #pPic {
+    left: -5%;
+    top: -2%;
+    transform: scale(0.6);
+  }
+
+  .picCard:hover .picContent {
+    left: 0%;
+    top: 20%;
+  }
+
+  .picCard:hover .dni {
+    font-size: 3vw;
+    top: 16%;
+    line-height: 7vw;
+  }
+
+  .picCard:hover .mainTitle, .picCard:active .mainTitle, .picCard:focus .mainTitle {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #mainLeft:hover + #mainRight .mainTitle, .picCard:active + #mainRight, .picCard:focus + #mainRight {
+    opacity: 0;
+    transition: 0.7s;
   }
 }
