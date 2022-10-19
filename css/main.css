@@ -168,7 +168,6 @@
   left: 5%;
   width: 30%;
   height: 20%;
-  opacity: 0;
   transition: 0.5s;
   text-align: center;
   visibility: hidden;
@@ -176,7 +175,7 @@
 
 .picCard:hover .social {
   visibility: visible;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .picContent ul {
@@ -276,64 +275,30 @@
     width: auto;
     max-width: 350px;
     align-items: flex-start;
-    margin: 10px;
+    margin: 5vw;
+    width: 40vw;
+    height: 40vw;
   }
 
   .picCard:hover {
-    height: 600px;
+    height: 110vw;
   }
 
   .picCard .picContent {
     width: 100%;
-    left: 0;
-    padding: 30px;
-  }
-
-  .picCard:hover img {
-    top: 70%;
-    left: 50%;
-    height: 300px;
-  }
-
-  #mainLeft {
-    padding: 5px;
-  }
-
-  .picCard {
-    width: 40vw;
-    height: 40vw;
-  }
-}
-
-@media (max-width: 400px) {
-  .picCard .picContent {
-    padding: 20px;
-  }
-
-  .picCard:hover .socialIcon {
-    width: 5vw;
-    height: 5vw;
-  }
-
-  .picCard:hover .social {
-    display: inline;
+    left: 0vw;
+    padding: 10vw;
   }
 
   .picCard:hover #pPic {
-    left: -5%;
-    top: -2%;
+    left: -2vw;
+    top: -2vw;
     transform: scale(0.6);
   }
 
-  .picCard:hover .picContent {
-    left: 0%;
-    top: 20%;
-  }
-
-  .picCard:hover .dni {
-    font-size: 3vw;
-    top: 16%;
-    line-height: 7vw;
+  #mainLeft {
+    padding: 1vw;
+    width: 80%;
   }
 
   .picCard:hover .mainTitle, .picCard:active .mainTitle, .picCard:focus .mainTitle {
@@ -346,4 +311,78 @@
     opacity: 0;
     transition: 0.7s;
   }
+
+  .picCard:hover .socialIcon {
+    width: 6vw;
+    height: 9vw;
+    transition: 0.4s;
+  }
+
+  .picCard:hover .social {
+    width: 14vw;
+    top: 7%;
+    left: 60%;
+    display: inline-block;
+    transition: 0.4s;
+  }
+
+  .picCard:hover .picContent {
+    padding: 10px 10px;
+    left: 0%;
+    top: 30%;
+  }
+
+  .picCard:hover #cardTitle {
+    font-size: 21px;
+  }
+
+  .picCard:hover .dni {
+    padding: 10px 20px;
+    font-size: 13px;
+    top: 10%;
+    left: 2%;
+    line-height: 7vw;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .picCard .picContent {
+    padding: 3vw;
+  }
+
+  .picCard:hover .social {
+    width: 20vw;
+    top: 3vw;
+    left: 37vw;
+    transition: 0.4s;
+  }
+
+  .picCard:hover .socialIcon {
+    width: 8vw;
+    height: 12vw;
+    top: 1vw;
+    left: 15vw;
+    transition: 0.4s;
+  }
+
+  .picCard:hover .picContent {
+    padding: 3vw;
+    left: 0;
+    top: 33vw;
+  }
+
+  .picCard:hover #cardTitle {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
+  .picCard:hover .dni {
+    padding: 3vw;
+    font-size: 3vw;
+    top: 15vw;
+    left: 0.1vw;
+    line-height: 7vw;
+  }
+
 }
