@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+
+@font-face {
+  font-family: upheaval;
+  src: url(../fonts/upheaval/upheavtt.ttf);
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+#secondWrapper {
+  width: 100%;
+  margin-top: 10rem;
+  background: linear-gradient(135deg, #42d392, #647eff);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#pCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 25rem;
+}
+
+#pTitle {
+  display: inline-block;
+  font-family: poppins;
+  font-weight: bold;
+  color: white;
+}
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 1rem;
+    box-shadow: 0px 30px 40px -20px #8d99ae;
+    padding: 30px;
+    margin: 20px;
+    width: 30rem;
+    background: white;
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+
+.red {
+    border-top: 3px solid var(--red);
+}
+
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+.iCard {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    position: relative;
+    bottom: 0px;
+    vertical-align: baseline;
+}
+
+.aCard {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
