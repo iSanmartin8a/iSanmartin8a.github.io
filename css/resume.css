@@ -1,0 +1,11 @@
+#thirdWrapper {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 3rem 2rem 2rem 2rem;
+    color: black;
+}
+
+#rTitle {
+    font-family: poppins;   
+    font-weight: bold;
+}

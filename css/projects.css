@@ -1,15 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
-
-@font-face {
-  font-family: upheaval;
-  src: url(../fonts/upheaval/upheavtt.ttf);
-}
-
 :root {
-    --red: hsl(0, 78%, 62%);
     --cyan: hsl(180, 62%, 55%);
-    --orange: hsl(34, 97%, 64%);
-    --blue: hsl(212, 86%, 64%);
     --varyDarkBlue: hsl(234, 12%, 34%);
     --grayishBlue: hsl(229, 6%, 66%);
     --veryLightGray: hsl(0, 0%, 98%);
@@ -23,7 +13,7 @@
   margin-top: 10rem;
   background: linear-gradient(135deg, #42d392, #647eff);
   border-radius: 2rem;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -33,7 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 25rem;
+    height: 23rem;
 }
 
 #pTitle {
@@ -50,22 +40,33 @@
 .box {
     border-radius: 1rem;
     box-shadow: 0px 30px 40px -20px #8d99ae;
-    padding: 30px;
+    padding: 2rem 1rem 2rem 1rem;
     margin: 20px;
     width: 30rem;
     background: white;
+    transition: 0.5s;
+}
+
+#gitLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.5;
+    justify-content: center;
+}
+
+.divider {
+    background: white;
+    width: 7rem;
+    height: 0.2rem;
+}
+
+#logoGithub {
+    width: 8rem;
 }
 
 .cyan {
     border-top: 3px solid var(--cyan);
-}
-
-.red {
-    border-top: 3px solid var(--red);
-}
-
-.orange {
-    border-top: 3px solid var(--orange);
 }
 
 .iCard {
@@ -75,10 +76,29 @@
     position: relative;
     bottom: 0px;
     vertical-align: baseline;
+    border-radius: 0.5rem;
 }
 
 .aCard {
     text-decoration: none;
     color: black;
-    display: block;
+}
+
+.aCard:hover, .aCard:focus, .aCard:active {
+    color: #51555c;
+}
+
+.cardWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+    box-shadow: 0px 30px 40px -20px #afbbce;
+}
+
+.box:hover  #secondWrapper{
+    background: linear-gradient(20deg, #42d392, #647eff);
 }
