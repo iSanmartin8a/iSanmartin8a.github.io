@@ -28,6 +28,8 @@ html {
 footer {
   padding-top: 10rem;
   text-align: center;
+  bottom: 0%;
+  align-self: flex-end;
 }
 
 @media (max-width: 1500px) {

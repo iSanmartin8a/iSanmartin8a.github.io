@@ -207,6 +207,33 @@
   -webkit-text-fill-color: transparent;
 }
 
+#iResume {
+  width: 20rem;
+  transition: 0.5s;
+}
+
+#dResume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#dResume:hover iframe{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#dResume:hover #iResume {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#thirdWrapper iframe {
+  opacity: 0;
+}
+
 .dni strong {
   color: #5e8cec;
   border: 2px dashed rgb(0, 0, 0, 0.2);
