@@ -213,11 +213,13 @@
 }
 
 #dResume {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
   text-align: center;
+  width: fit-content;
+  height: 30rem;
 }
 
 #dResume:hover iframe{
@@ -232,6 +234,7 @@
 
 #thirdWrapper iframe {
   opacity: 0;
+  transition: 0.5s;
 }
 
 .dni strong {

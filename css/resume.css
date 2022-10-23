@@ -8,6 +8,7 @@
 #rTitle {
   font-family: poppins;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 @keyframes slidein {
