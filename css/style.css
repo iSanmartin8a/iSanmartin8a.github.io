@@ -136,12 +136,10 @@ body {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: #a0a0a0 0px 0px 10px 0px;
-  transition: 5s;
   width: 0rem;
   height: 0rem;
   top: 4rem;
   right: 4rem;
-  -webkit-transition: all 3s linear 0s;
 }
 
 .darkWindow {

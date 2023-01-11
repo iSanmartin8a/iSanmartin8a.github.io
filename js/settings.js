@@ -10,7 +10,7 @@ $('.lightButSets').click(function() {
     $('body').toggleClass("dark");
     $(this).toggleClass("active");
     $('.lightSets').toggleClass("darkSets");
-    $('.lightWindow').toggleClass("darkWindow").css("transition", "5s");
+    $('.lightWindow').toggleClass("darkWindow").css("transition", "0.5s");
     $('.lightButSets').toggleClass("darkButSets");
   });
 
