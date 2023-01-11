@@ -4,16 +4,12 @@
     function dragElement(elmnt) {
         $(elmnt).css("transition", "0s");
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-        if (document.getElementsByClassName(elmnt.id)) {
-            // if present, the header is where you move the DIV from:
-            document.getElementsByClassName(elmnt.id).onmousedown = dragMouseDown;
-        } else {
-            // otherwise, move the DIV from anywhere inside the DIV:
-            elmnt.onmousedown = dragMouseDown;
-        }
+        elmnt.onmousedown = dragMouseDown;
+        console.log("empiezo para draggear");
         
         function dragMouseDown(e) {
-            console.log("hika");
+            alert("hola");
+            console.log("clicko y trackeo el cursor");
             $(elmnt).css("transition", "0s");
             e = e || window.event;
             e.preventDefault();
@@ -24,8 +20,9 @@
             // call a function whenever the cursor moves:
             document.onmousemove = elementDrag;
         }
-
+        
         function elementDrag(e) {
+            console.log("marco la nueva posicion");
             $(elmnt).css("transition", "0s");
             e = e || window.event;
             e.preventDefault();
