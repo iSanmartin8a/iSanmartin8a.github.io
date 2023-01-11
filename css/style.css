@@ -140,6 +140,7 @@ body {
   height: 0rem;
   top: 4rem;
   right: 4rem;
+  z-index: 999;
 }
 
 .darkWindow {
@@ -202,13 +203,6 @@ body {
   color: #0d1b2a;
 }
 
-  /* @media (max-width: 768px) {
-    .mode {
-      line-height: 22px;
-      left: 1px;
-    }
-  } */
-
   .active {
     background: #0d1b2a !important; 
   }
@@ -270,3 +264,42 @@ body {
     width: 12rem;
   }
 }
+
+/* RESPONSIVE */
+
+  @media (max-width: 768px) {
+    .mode {
+      line-height: 22px;
+      left: 1px;
+    }
+
+    #title {
+      text-align: center;
+      box-shadow: 0px;
+    }
+
+    #firstLine {
+      font-size: 3rem;
+    }
+
+    #secondLine {
+      top: -1rem;
+      left: 0rem;
+      font-size: 2.9rem;
+    }
+
+    #thirdLine {
+      top: -1rem;
+      font-size: 1.3rem;
+    }
+
+    #cloud {
+      width: 10rem;
+      top: -4rem;
+      left: 3rem;
+      z-index: -1;
+      filter: blur(5px);
+      /* opacity: 0.5; */
+    }
+
+  } 

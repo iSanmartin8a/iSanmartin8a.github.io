@@ -3,14 +3,14 @@ script.src = 'https://code.jquery.com/jquery-3.6.3.min.js'; // Check https://jqu
 document.getElementsByTagName('head')[0].appendChild(script);
 
 $('.lightButSets').click(function() {
-    $('.lightWindow').toggleClass("showWindow");
+    $('.lightWindow').toggleClass("showWindow").css("transition", "0.5s");
     });
 
   $('.mode').click(function() {
     $('body').toggleClass("dark");
     $(this).toggleClass("active");
     $('.lightSets').toggleClass("darkSets");
-    $('.lightWindow').toggleClass("darkWindow").css("transition", "0.5s");
+    $('.lightWindow').toggleClass("darkWindow");
     $('.lightButSets').toggleClass("darkButSets");
   });
 
