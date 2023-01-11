@@ -6,7 +6,6 @@
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
         if (document.getElementsByClassName(elmnt.id)) {
             // if present, the header is where you move the DIV from:
-            console.log("hika");
             document.getElementsByClassName(elmnt.id).onmousedown = dragMouseDown;
         } else {
             // otherwise, move the DIV from anywhere inside the DIV:
@@ -14,6 +13,7 @@
         }
         
         function dragMouseDown(e) {
+            console.log("hika");
             $(elmnt).css("transition", "0s");
             e = e || window.event;
             e.preventDefault();
