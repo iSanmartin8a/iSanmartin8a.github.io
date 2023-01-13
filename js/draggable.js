@@ -1,10 +1,12 @@
     // // // // Make the DIV element draggable:
     dragElement(document.getElementsByClassName("lightWindow"));
+    dragElement(document.getElementsByClassName("darkWindow"));
+    dragElement(document.getElementsByClassName("showWindow"));
     
     function dragElement(elmnt) {
         $(elmnt).css("transition", "0s");
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-        elmnt.onmousedown = dragMouseDown;
+        elmnt.onMouseDown = function() { alert("Hello World"); };
         console.log("empiezo para draggear");
         
         function dragMouseDown(e) {

@@ -12,6 +12,9 @@ $('.lightButSets').click(function() {
     $('.lightSets').toggleClass("darkSets");
     $('.lightWindow').toggleClass("darkWindow");
     $('.lightButSets').toggleClass("darkButSets");
+    $('.lightMenu').toggleClass("darkMenu");
+    $('.lightScratch').toggleClass("darkScratch");
+
   });
 
   $('.language').click(function() {
