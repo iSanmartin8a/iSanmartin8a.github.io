@@ -20,3 +20,21 @@ $('.lightButSets').click(function() {
   $('.language').click(function() {
     $(this).toggleClass("langActive");
   });
+
+  $('.home').click(function() {
+    $('.first').addClass("activateChapter");
+    $('.second').removeClass("activateChapter");
+    $('#third').css("opacity", 0);
+    $('#fourth').css("opacity", 0);
+  });
+
+  $('.projects').click(function() {
+    $('.first').removeClass("activateChapter");
+    $('.second').addClass("activateChapter");
+    $('#third').css("opacity", 0);
+    $('#fourth').css("opacity", 0);
+  });
+
+  window.onload = function() {
+    $('.first').addClass("activateChapter");
+  }

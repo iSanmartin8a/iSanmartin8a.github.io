@@ -46,3 +46,4 @@
             $(elmnt).css("transition", "0.5s");
         }
     }
+
