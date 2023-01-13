@@ -14,7 +14,7 @@ $('.lightButSets').click(function() {
     $('.lightButSets').toggleClass("darkButSets");
     $('.lightMenu').toggleClass("darkMenu");
     $('.lightScratch').toggleClass("darkScratch");
-
+    $('.lightCloud').toggleClass("darkCloud");
   });
 
   $('.language').click(function() {
