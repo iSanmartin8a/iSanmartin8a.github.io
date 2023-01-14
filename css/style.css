@@ -470,20 +470,16 @@ body {
   }
 
   #menu {
-    position: absolute;
     align-items: center;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 70%;
-    bottom: 4rem;
-    justify-content: space-between;
+    width: 80%;
     display: grid !important;
-    grid-template-columns: 40% 50%;
-    /* grid-template-rows: 12px 12px 12px; */
+    grid-template-columns: 50% 50%;
+    column-gap: 1;
+    margin: auto;
   }
 
-  #menu a h1 {
-    font-size: 1.1rem !important;
+  #menu h1 {
+    font-size: 1.2rem !important;
   }
 
   .showWindow {
@@ -527,4 +523,5 @@ body {
     width: 1.5rem;
     height: 1.5rem;
   }
+
 }
