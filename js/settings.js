@@ -15,6 +15,7 @@ $('.lightButSets').click(function() {
     $('.lightMenu').toggleClass("darkMenu");
     $('.lightScratch').toggleClass("darkScratch");
     $('.lightCloud').toggleClass("darkCloud");
+    $('.icon').toggleClass("darkIcon");
   });
 
   $('.language').click(function() {
@@ -36,5 +37,7 @@ $('.lightButSets').click(function() {
   });
 
   window.onload = function() {
-    $('.first').addClass("activateChapter");
+    setTimeout(function() {
+      $('.first').addClass("activateChapter");
+    }, 300);
   }
