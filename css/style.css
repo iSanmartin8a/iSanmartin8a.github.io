@@ -26,6 +26,11 @@ a {
   width: 30%;
 }
 
+#iconoDiv {
+  width: fit-content;
+  margin-bottom: 0.2rem;
+}
+
 #iconoDiv:hover .inicial{
   color: #e0e1dd;
   transition: 0.3s;
@@ -121,6 +126,18 @@ i {
   transition: 1.3s;
 }
 
+#quote {
+  position: relative;
+  top: -4.5rem;
+  width: 26rem;
+  color: #e3caf8;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  margin-left: 10rem;
+  opacity: 0.5;
+}
+
 #rol:hover {
   opacity: 0;
   transition: 1s;
@@ -138,6 +155,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0d1b2a;
 }
 
 .secondContent {
@@ -164,5 +182,48 @@ i {
 
 #datos h4 {
   margin-bottom: 0.8rem;
+}
+
+#redes a{
+  color: #0d1b2a;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.3s;
+}
+
+#redes a:hover {
+  color: #9191e9;
+  transition: 0.3s;
+}
+
+#copy:hover {
+  color: #9191e9;
+  transition: 0.3s;
+}
+
+#copy {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#mensajeCopy {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  border: 1px solid #0d1b2a;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  margin: auto;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+
+#mensaje {
+  margin-top: 0.2rem;
+  font-size: 1rem;
 }
 
