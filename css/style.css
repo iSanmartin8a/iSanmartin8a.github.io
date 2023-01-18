@@ -227,3 +227,40 @@ i {
   font-size: 1rem;
 }
 
+#foto {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 2px solid #0d1b2a;
+  margin: 2rem;
+  transition: 0.3s;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profilePic {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 2rem;
+  transition: 0.3s;
+  object-fit: cover;
+  margin: auto;
+  filter: blur(10px);
+}
+
+#foto:hover #profilePic {
+  width: 23rem;
+  height: 23rem;
+  transition: 0.3s;
+  transform: translateY(-1rem);
+  filter: blur(0px);
+}
+
+#foto:hover {
+  border: 2px solid #9191e9;
+  transition: 0.3s;
+}
