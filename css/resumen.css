@@ -1,0 +1,119 @@
+#resumen {
+    color: #0d1b2a;
+    margin: auto;
+  }
+  
+  .secondContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #0d1b2a;
+  }
+  
+  #titulos, #datos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #titulos {
+    text-align: right;
+  }
+  
+  #datos {
+    /* margin-bottom: 1rem; */
+    margin-top: 0.4rem;
+  }
+  
+  #datos h4 {
+    margin-bottom: 0.8rem;
+  }
+  
+  #redes a{
+    color: #0d1b2a;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;
+  }
+  
+  #redes a:hover {
+    color: #9191e9;
+    transition: 0.3s;
+  }
+  
+  #copy:hover {
+    color: #9191e9;
+    transition: 0.3s;
+  }
+  
+  #copy {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  #mensajeCopy {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    border: 1px solid #0d1b2a;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    margin: auto;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+  }
+  
+  #mensaje {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
+  
+  #foto {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 2px solid #0d1b2a;
+    margin: 2rem;
+    transition: 0.3s;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #profilePic {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 2rem;
+    transition: 0.3s;
+    object-fit: cover;
+    margin: auto;
+    filter: blur(1px);
+  }
+  
+  #foto:hover #profilePic {
+    width: 23rem;
+    height: 23rem;
+    transition: 0.3s;
+    transform: translateY(-1rem);
+    filter: blur(0px);
+  }
+  
+  #foto:hover {
+    border: 2px solid #9191e9;
+    transition: 0.3s;
+  }
+
+  #datosPersonales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
