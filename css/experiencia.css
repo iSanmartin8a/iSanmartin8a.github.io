@@ -7,3 +7,58 @@
     justify-content: center;
     align-items: center;
 }
+
+.forthContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 50%;
+}
+
+#controllers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#controllers i {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#controllers i:hover {
+    color: #9191e9;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#nervia {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://b2569356.smushcdn.com/2569356/wp-content/uploads/2020/11/AdobeStock_241083104-1400x934.jpg?size=1400x934&lossy=1&strip=1&webp=1");
+}
+
+#osiria {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/03/27/15221631742922.jpg");
+}
+
+#algui {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://www.adecco.es/sites/default/files/styles/adecco_1200x675/public/2019-10/adecco-empresa-consultora.jpg?itok=8Z7Z7Z7Z");
+}
+
+#adecco {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://www.adecco.es/sites/default/files/styles/adecco_1200x675/public/2019-10/adecco-empresa-consultora.jpg?itok=8Z7Z7Z7Z");
+}
+
+#osiria, #algui, #adecco, #nervia {
+    display: none;
+    color: #d8e2dc;
+    padding: 4rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+.active {
+    display: block !important;
+}
