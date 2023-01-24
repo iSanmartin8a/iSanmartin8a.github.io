@@ -137,7 +137,7 @@ i {
   margin: 1rem 1rem 1rem 1rem;
 }
 
-#tituloProyectos, #tituloResumen  {
+#tituloProyectos  {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #0d1b2a;
@@ -147,6 +147,12 @@ i {
   margin-top: 1rem;
   margin-bottom: 3rem;
   color: #0d1b2a;
+}
+
+#tituloEstudios {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #0d1b2a !important;
 }
 
 .imagenProyecto {
