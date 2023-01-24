@@ -17,13 +17,14 @@
 
 .fifthContent div {
     text-align: center;
+    transition: 0.3s;
 }
 
 .fifthContent:hover div {
-    /* animation: floating 1s ease-in-out infinite; */
+    animation: menosFloat 1s ease-in-out infinite;
 }
 
-.fifthContent div:hover {
+.fifthContent > div:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
