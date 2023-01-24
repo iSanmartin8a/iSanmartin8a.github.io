@@ -33,6 +33,7 @@
     /* background: #0d1b2a; */
     z-index: 99;
     transition: 1s;
+    width: fit-content;
   }
   
   #fakeRol {

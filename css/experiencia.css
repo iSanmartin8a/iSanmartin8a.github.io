@@ -43,22 +43,29 @@
 }
 
 #algui {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://www.adecco.es/sites/default/files/styles/adecco_1200x675/public/2019-10/adecco-empresa-consultora.jpg?itok=8Z7Z7Z7Z");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://aireacondicionadototal.com/wp-content/uploads/2020/11/Como-Instalar-un-Aire-Acondicionado.jpg");
 }
 
 #adecco {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://www.adecco.es/sites/default/files/styles/adecco_1200x675/public/2019-10/adecco-empresa-consultora.jpg?itok=8Z7Z7Z7Z");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://okdiario.com/img/2021/10/03/cuales-son-los-centros-comerciales-mas-grandes-de-espana.jpg");
 }
 
 #osiria, #algui, #adecco, #nervia {
     display: none;
     color: #d8e2dc;
     padding: 4rem;
-    border-radius: 1rem;
     transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
   }
   
-
 .active {
     display: block !important;
+}
+
+.subtituloEmpresa {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    /* border-radius: 1rem; */
+    border: 3px solid #9191e9;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(139, 95, 139, 0.25) 0px 50px 100px -20px, rgba(204, 56, 209, 0.3) 0px 30px 60px -30px;
 }

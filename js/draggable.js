@@ -6,17 +6,25 @@ function nextCompany () {
     var algui = document.getElementById('algui');
 
     if (nervia.classList.contains('active')) {
-        nervia.classList.remove('active');
-        osiria.classList.add('active');
+        nervia.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { nervia.classList.remove('active'); }, 1000);
+        setTimeout(function () { osiria.classList.add('active'); }, 1000);
+        osiria.style.animation = 'venirseDer 2s ease forwards';
     } else if (osiria.classList.contains('active')) {
-        osiria.classList.remove('active');
-        adecco.classList.add('active');
+        osiria.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { osiria.classList.remove('active'); }, 1000);
+        setTimeout(function () { adecco.classList.add('active'); }, 1000);
+        adecco.style.animation = 'venirseDer 2s ease forwards';
     } else if (adecco.classList.contains('active')) {
-        adecco.classList.remove('active');
-        algui.classList.add('active');
+        adecco.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { adecco.classList.remove('active'); }, 1000);
+        setTimeout(function () { algui.classList.add('active'); }, 1000);
+        algui.style.animation = 'venirseDer 2s ease forwards';
     } else if (algui.classList.contains('active')) {
-        algui.classList.remove('active');
-        nervia.classList.add('active');
+        algui.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { algui.classList.remove('active'); }, 1000);
+        setTimeout(function () { nervia.classList.add('active'); }, 1000);
+        nervia.style.animation = 'venirseDer 2s ease forwards';
     }
 };
 
@@ -28,16 +36,24 @@ function prevCompany () {
     var algui = document.getElementById('algui');
 
     if (nervia.classList.contains('active')) {
-        nervia.classList.remove('active');
-        algui.classList.add('active');
+        nervia.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { nervia.classList.remove('active'); }, 1000);
+        setTimeout(function () { algui.classList.add('active'); }, 1000);
+        algui.style.animation = 'venirseIzq 2s ease forwards';
     } else if (osiria.classList.contains('active')) {
-        osiria.classList.remove('active');
-        nervia.classList.add('active');
+        osiria.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { osiria.classList.remove('active'); }, 1000);
+        setTimeout(function () { nervia.classList.add('active'); }, 1000);
+        nervia.style.animation = 'venirseIzq 2s ease forwards';
     } else if (adecco.classList.contains('active')) {
-        adecco.classList.remove('active');
-        osiria.classList.add('active');
+        adecco.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { adecco.classList.remove('active'); }, 1000);
+        setTimeout(function () { osiria.classList.add('active'); }, 1000);
+        osiria.style.animation = 'venirseIzq 2s ease forwards';
     } else if (algui.classList.contains('active')) {
-        algui.classList.remove('active');
-        adecco.classList.add('active');
+        algui.style.animation = 'irse 2s ease forwards';
+        setTimeout(function () { algui.classList.remove('active'); }, 1000);
+        setTimeout(function () { adecco.classList.add('active'); }, 1000);
+        adecco.style.animation = 'venirseIzq 2s ease forwards';
     }
 };
