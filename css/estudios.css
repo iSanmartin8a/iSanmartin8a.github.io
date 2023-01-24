@@ -19,6 +19,15 @@
     text-align: center;
 }
 
+.fifthContent:hover div {
+    /* animation: floating 1s ease-in-out infinite; */
+}
+
+.fifthContent div:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 .primeraCelda, .terceraCelda, .quintaCelda, .septimaCelda {
     grid-row: 3;
     grid-column: 1;
