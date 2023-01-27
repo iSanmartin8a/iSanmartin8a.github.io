@@ -33,6 +33,16 @@ a {
   transition: 0.3s;
 }
 
+.fa-github {
+  cursor: pointer !important;
+  transition: 0.3s;
+}
+
+.fa-github:hover {
+  color: #9191e9;
+  transition: 0.3s ease;
+}
+
 #logo {
   width: 30%;
 }
