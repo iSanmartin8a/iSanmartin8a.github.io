@@ -130,16 +130,13 @@ i {
   width: 17rem;
   height: 25rem;
   border-radius: 0.5rem;
-  /* background: #e0e1dd; */
   color: #0d1b2a;
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   transition: 0.3s;
   overflow: hidden;
-  /* padding: 1rem; */
 }
 
 .tarjetaProyecto p {

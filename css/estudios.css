@@ -21,10 +21,6 @@
     transition: 0.3s;
 }
 
-.fifthContent:hover div {
-    /* animation: menosFloat 1s ease-in-out infinite; */
-}
-
 .fifthContent > div:hover {
     transform: scale(1.1);
     transition: 0.3s;
